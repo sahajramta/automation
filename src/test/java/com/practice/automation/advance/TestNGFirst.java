@@ -1,10 +1,8 @@
 package com.practice.automation.advance;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.practice.automation.DriverFactory;
 
