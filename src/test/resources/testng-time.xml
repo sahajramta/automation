@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TimeTab groups">
+	<test verbose="2" name="GRP-TimeTab">
+		<classes>
+			<class name="com.practice.automation.advance.BasicTest1WD" />
+		</classes>
+	</test> <!-- GRP-TimeTab -->
+</suite> <!-- practice-automation by groups -->

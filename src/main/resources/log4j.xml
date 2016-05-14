@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration debug="true" xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	  <appender name="ALL_LOG_FILE" class="org.apache.log4j.RollingFileAppender">
+		  <param name="Threshold" value="INFO"/>
+		  <param name="File" value="./practice-automation.log"/>
+		  <param name="Append" value="true"></param>
+		  <param name="BufferedIO" value="false"/>
+		  <param name="MaxFileSize" value="5MB"/>
+		  <param name="MaxBackupIndex" value="50"/>
+		  <layout class="org.apache.log4j.PatternLayout">
+			 <param name="ConversionPattern" value="%5p (%F:%L) - %m%n"/>
+		  </layout>
+	  </appender>
+	
+	  <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		  <param name="Target" value="System.out"/>
+		  <param name="Threshold" value="INFO"/>
+		  <layout class="org.apache.log4j.PatternLayout">
+		     <!-- The default pattern: Date Priority [Category] Message\n -->
+		     <!-- param name="ConversionPattern" value="%5p (%F:%L) - %m%n"/ -->
+		     <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} [%t] %p [%C] %m%n" />
+		  </layout>
+	  </appender>
+		  	
+	  <category name="org.springframework">
+	    <!-- appender-ref ref="ALL_LOG_FILE"/ -->
+	    <appender-ref ref="CONSOLE"/>
+	  </category>	  		 
+		  		  	  
+	  <category name="com.practice">
+	    <appender-ref ref="CONSOLE"/>
+	  </category>
+	  	  
+		
+</log4j:configuration>

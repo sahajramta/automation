@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+	<windows>
+		<driver id="internetexplorer">
+			<version id="2.45.0">
+				<bitrate sixtyfourbit="true">
+					<filelocation>http://selenium-release.storage.googleapis.com/2.45/IEDriverServer_x64_2.45.0.zip
+					</filelocation>
+					<hash>b3cdacc846d7b9c3f8fb8b70af0a9cfc5839bd83</hash>
+					<hashtype>sha1</hashtype>
+				</bitrate>
+				<bitrate thirtytwobit="true">
+					<filelocation>http://selenium-release.storage.googleapis.com/2.45/IEDriverServer_Win32_2.45.0.zip
+					</filelocation>
+					<hash>cc822d30efe3119b76af9265c47d42fca208f85a</hash>
+					<hashtype>sha1</hashtype>
+				</bitrate>
+			</version>
+		</driver>
+		<driver id="googlechrome">
+			<version id="2.14">
+				<bitrate thirtytwobit="true" sixtyfourbit="true">
+					<filelocation>http://chromedriver.storage.googleapis.com/2.14/chromedriver_win32.zip
+					</filelocation>
+					<hash>4fe4aaf625073c39c29da994d815ffcc2c314c40</hash>
+					<hashtype>sha1</hashtype>
+				</bitrate>
+			</version>
+		</driver>
+		<driver id="phantomjs">
+			<version id="1.9.8">
+				<bitrate thirtytwobit="true" sixtyfourbit="true">
+					<filelocation>https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-windows.zip
+					</filelocation>
+					<hash>4531bd64df101a689ac7ac7f3e11bb7e77af8eff</hash>
+					<hashtype>sha1</hashtype>
+				</bitrate>
+			</version>
+		</driver>
+	</windows>
+	<linux></linux>
+	<osx></osx>
+</root>
