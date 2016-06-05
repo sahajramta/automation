@@ -25,7 +25,8 @@
 		<!-- feature add -->
 		<!-- <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> 
 			<version>4.7</version> <scope>test</scope> </dependency> -->
-
+		
+		<!-- testing from linux -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
